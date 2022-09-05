@@ -1,0 +1,256 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+/* Universal */
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #1d1d1d;
+    text-shadow: 2px 2px 2px black;
+}
+#Home{
+  color: white !important;
+  background-color: #1d1d1d;
+}
+#About{
+    background: linear-gradient(to top, navy, #1d1d1d 90%);
+    color: white;
+}
+#Contact{
+  background: linear-gradient(to top, #1d1d1d, navy 70%);
+
+}
+.headerbox{
+    border: 5px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(to right, red, purple) 10;
+}
+/* menu start  */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+/* end menu start  */
+/* start of Home */
+.btn{
+  color: white;
+  background-image: linear-gradient( red, purple) ;
+  border: 2px solid var(--primary);
+  height: 5vh;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-in-out 0.32s;
+  outline: none;
+}
+.btn:hover{
+  box-shadow: inset 300px 0 0 0 white;
+  color: black;
+  transition: 0.55s ease-in-out;
+  cursor: pointer;
+}
+.headerbox2{
+    border: 5px solid;
+    border-image: linear-gradient(to right, red, purple) 1;   
+}
+.headerboxt{
+  margin-top: 20px;
+  border: 2px solid;
+
+  border-image: linear-gradient(to right, red, purple) 1;   
+  background-image: linear-gradient( red, purple) ;
+  color: white;
+}
+.profilebox{
+  margin-top: 20px;
+  border: 1px solid black;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 10px;
+  background-image: linear-gradient( red, purple) ;
+  color: white;
+}
+
+.headerboxt:hover{
+  transform: scale(1.1);
+  transition: 0.45s ease-in-out;
+  text-shadow: 2px 2px 2px white;
+  background-image: linear-gradient(white , white) ;
+  color: black;
+}
+.png:hover{
+  transform: scale(1.1);
+  transition: 0.35s ease-in-out;
+}
+/* end of Home */
+/* start of about */
+.logo {
+  padding: 20px 0;
+  text-shadow: none;
+}
+
+.logo .swiper {
+  padding: 5px 0;
+}
+
+.logo .swiper-slide i {
+  transition: 0.2s;
+}
+
+.logo .swiper-slide i:hover {
+  transform: scale(1.1);
+}
+
+.logo .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.logo .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff !important;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+.fa-brands2 {
+  text-align: center;
+  font-size: 100px;
+  background: linear-gradient(to right, red 20%, purple 40%, purple 60%,red 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+/* typewrite */
+.wrapper{
+
+  overflow: hidden;
+}
+.wrapper .text{
+  position: relative;
+  color: #00ade6;
+  font-size: 25px;
+  font-weight: 600;
+}
+.wrapper .text.first-text{
+  color: #fff;
+}
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #14133d;
+  border-left: 2px solid #00ade6;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
+}
+.profile{
+  margin-top: 100px;
+}
+.socials{
+  color: white;
+  font-size: 50px;
+}
+
+/* End of About */
+/* Start of Contacts */
+
+.form-group1 {
+  position: relative;
+  display: block;
+  margin-bottom: 48px; 
+}
+  .form-group1 span {
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 11px;
+    transition: all .2s ease;
+    transform-origin: 0 0;
+    cursor: text; }
+  .form-group1 span.border {
+    height: 2px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 41px;
+    transform: scaleX(0);
+    transition: all .15s ease;
+    background: none; }
+
+.form-control1 {
+  border: none;
+  box-shadow:none;
+  outline: none;
+  border-bottom: 2px solid #00ade6;
+  display: block;
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+  background: none;
+  font-family: "Montserrat-SemiBold"; 
+  }
+  .form-control1:focus, .form-control1:valid {
+    border-bottom: 2px solid #fff; }
+  .form-control1:focus + span, .form-control1:valid + span {
+      transform: translateY(-22px) scale(0.8);
+  }
+  .form-control1:focus + span + .border, .form-control1:valid + span + .border {
+        transform: scaleX(1);   
+  }
+
+textarea.form-control {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+   }
+/* End of Contacts  */
+
+@media only screen and (max-width: 480px) {
+  body{
+    width: 100%;
+  }
+}
