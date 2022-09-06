@@ -6,6 +6,9 @@
     box-sizing: border-box;
     
 }
+data-aos{
+  transition: 0.55s ease-in-out;
+}
 body{
     background-color: #1d1d1d;
     text-shadow: 2px 2px 2px black;
@@ -174,7 +177,7 @@ body{
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #14133d;
+  background-color: #14143b;
   border-left: 2px solid #00ade6;
   animation: animate 4s steps(12) infinite;
 }
