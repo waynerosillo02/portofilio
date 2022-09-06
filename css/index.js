@@ -116,6 +116,6 @@ menu_btn.addEventListener("click", () => {
 })
 
 
-function sumbit(){
+function Sumbit(){
   alert('Successful').style.color = "green";
 }
